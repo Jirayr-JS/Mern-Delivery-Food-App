@@ -1,0 +1,35 @@
+{
+	"name": "delivery-food-app",
+	"version": "2.0.0",
+	"description": "practice delivery food application built the MERN stack",
+	"type": "module",
+	"main": "server.js",
+	"scripts": {
+		"start": "node backend/server.js",
+		"server": "nodemon backend/server.js",
+		"client": "npm run dev --prefix frontend",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"data:import": "node backend/seeder.js",
+		"data:destroy": "node backend/seeder.js -d",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+	},
+	"author": "Jirayr_N",
+	"license": "MIT",
+	"dependencies": {
+		"bcryptjs": "^3.0.2",
+		"colors": "^1.4.0",
+		"cookie-parser": "^1.4.7",
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.15.2",
+		"multer": "^2.0.1",
+		"react-paypal-button-v2": "^2.6.3"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.3",
+		"concurrently": "^9.1.2",
+		"markdown-toc": "^1.2.0",
+		"nodemon": "^3.1.10"
+	}
+}
