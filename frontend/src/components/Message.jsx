@@ -1,7 +1,14 @@
 import React from 'react';
 
 const Message = ({ variant, children }) => {
-	return <div variant={variant}>{children}</div>;
+	return (
+		<div
+			className='message-errors'
+			variant={variant}
+		>
+			<p>{children}</p>
+		</div>
+	);
 };
 
 Message.defaultProps = {

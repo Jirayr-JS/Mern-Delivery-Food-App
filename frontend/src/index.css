@@ -1383,6 +1383,24 @@ footer {
 	left: 54.4rem;
 }
 
+.message-errors {
+	width: 30rem;
+	max-width: 25rem;
+	height: 7rem;
+	margin: 13rem auto;
+	padding: 1rem;
+	background-color: #6d0b0b;
+	color: #f9b8b8;
+	border-radius: 6px;
+}
+
+.message-errors p {
+	text-align: center;
+	margin: 1.7em auto;
+	color: #ffab04;
+	text-transform: capitalize;
+}
+
 .error {
 	width: 90%;
 	max-width: 25rem;
